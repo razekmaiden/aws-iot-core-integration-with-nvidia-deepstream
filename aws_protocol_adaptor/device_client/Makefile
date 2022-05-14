@@ -63,7 +63,7 @@ LD_FLAG += -ldl $(TLS_LIB_DIR)/libmbedtls.a $(TLS_LIB_DIR)/libmbedcrypto.a $(TLS
 
 # GLibs
 DP_SOURCE_DIR = ../../..
-NVDS_VERSION:=4.0
+NVDS_VERSION:=5.1
 LIB_INSTALL_DIR?=/opt/nvidia/deepstream/deepstream-$(NVDS_VERSION)/lib/
 PKGS:= gstreamer-1.0 gstreamer-video-1.0 x11
 GLIBS_INCLUDE+= -I $(DP_SOURCE_DIR)/includes
