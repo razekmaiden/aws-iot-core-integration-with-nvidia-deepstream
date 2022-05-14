@@ -284,6 +284,7 @@ void nvds_msgapi_do_work(NvDsMsgApiHandle h_ptr)
 		if (SUCCESS != rc)
 		{
 			IOT_ERROR("Unable to publish, error: %d\n", rc);
+                        kill(0, SIGTERM);
 			if (work_node->call_back_handler != NULL)
 			{
 				work_node->call_back_handler(work_node->user_ptr, NVDS_MSGAPI_ERR);
